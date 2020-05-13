@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: none;
+    font-family: 'Jost', sans-serif;
+}
+
+.banner{
+    align-items: center ;
+    background-image: url(../img/fundo_berthas.jpg);
+    background-size: 100%;  
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #d66b7f;
+    display: flex;
+    height: 900px;
+    justify-content: center;
+    margin-top: 0;
+    margin: none;
+}
+
+.banner__conteudo{
+    text-align: center;
+    margin: none;
+}
+
+.banner__titulo{
+    margin: none;
+    font-size: 80px;
+    text-shadow: 5px 5px white; 
+}
+
+.banner__subtitulo{
+    font-size: 60px;
+    margin: none;
+}
+
+.banner__link{
+    text-decoration: none;
+    color:#d66b7f;
+    background-color: white;
+    opacity: 0.6;
+    padding: 10px 15px;
+    border-radius: 30px; 
+    text-transform: uppercase;
+    border-style: ridge;
+    border-color: #d66b7f ;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    text-align: center ;
+    font-size: larger;
+    margin: none;
+}
+
+.banner__link:hover {
+    background-color: whitesmoke ;
+    opacity: 0.5;
+    margin: none;
+}
+.menu ul{
+    display: flex; 
+    justify-content: space-evenly; 
+    text-decoration: none;
+    list-style: none; 
+    color: black;
+    align-items: space-around;
+    font-size: 25px;
+    margin: none; 
+  }
+
+  .bottom{
+    color: #d66b7f;
+    border: 10px solid
+    padding 30px 40px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #d66b7f;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 9px #fff
+    padding 10px 15px;
+    border-radius: 30px; 
+  }
+
+.sobre{
+    padding: 50px;
+    margin: none;
+}
+
+.sobre__titulo{
+    color: #d66b7f; 
+    font-size: 55px;
+    text-align: center;
+    margin: none; 
+}
+
+.sobre__conteudo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    shape-margin: 0%;
+    font-size: 20px;
+    margin: none;
+}
+
+.abaixo_titulo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    shape-margin: 0%;
+    font-size: 50px;
+}
+.sobre__descricao{
+    width: 100%; 
+    line-height: 30px;
+    font-size: 28px;
+    margin: none;       
+}
+
+.footer {
+    margin: 5% 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.redes-sociais{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+  * .redes-sociais__link {
+    margin: 20px;
+    background-color: #d66b7f;
+    color: white;
+    text-decoration: none;
+    text-align:center;
+    padding: 10px 20px;
+    width: 150px;
+    margin: 20px;
+  }
+   
+  * .redes-sociais__link:hover {
+    opacity: 0.5;
+  } 
+  
+  * .redes-sociais__link img {
+    padding-top: 15px;
+    width: auto;
+    height: 70px;
+  } 
+
+  @media(max-width: 768px){
+    .sobre__conteudo{
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sobre__descricao{
+       width: 100%;    
+   }
+
+   .sobre__habilidades{
+       width: 100%;
+   }
+} 
