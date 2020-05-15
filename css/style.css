@@ -1,4 +1,6 @@
 *{
+    margin: 0; 
+    padding: 10px; 
     box-sizing: border-box;
 }
 
@@ -52,7 +54,6 @@ body{
     justify-content: center;
     text-align: center ;
     font-size: larger;
-    margin: none;
 }
 
 .banner__link:hover {
@@ -171,7 +172,11 @@ body{
        width: 100%;    
    }
 
-   .sobre__habilidades{
-       width: 100%;
-   }
+@media (min-width:200px) {
+    .bottom{
+        display: list-item
+    }
+}
+
+   
 } 
