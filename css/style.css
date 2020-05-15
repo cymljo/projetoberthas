@@ -39,27 +39,10 @@ body{
     margin: none;
 }
 
-.banner__link{
-    text-decoration: none;
-    color:#d66b7f;
-    background-color: white;
-    opacity: 0.6;
-    padding: 10px 15px;
-    border-radius: 30px; 
-    text-transform: uppercase;
-    border-style: ridge;
-    border-color: #d66b7f ;
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    text-align: center ;
-    font-size: larger;
-}
 
 .banner__link:hover {
     background-color: whitesmoke ;
     opacity: 0.5;
-    margin: none;
 }
 .menu ul{
     display: flex; 
@@ -69,8 +52,7 @@ body{
     color: black;
     align-items: space-around;
     font-size: 25px;
-    margin: none; 
-  }
+    margin: none; }
 
   .bottom{
     color: #d66b7f;
@@ -89,7 +71,10 @@ body{
     padding 10px 15px;
     border-radius: 30px; 
   }
-
+  .bottom:hover {
+    background-color:  #d66b7f; 
+    opacity: 0.5;
+}
 .sobre{
     padding: 50px;
     margin: none;
@@ -136,31 +121,34 @@ body{
 .redes-sociais{
     display: flex; 
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center;  
 }
-  
-  * .redes-sociais__link {
-    margin: 20px;
-    background-color: #d66b7f;
-    color: white;
+
+   .redes-sociais__link{
+    margin: 20px;  
+    color:#d66b7f;
     text-decoration: none;
     text-align:center;
     padding: 10px 20px;
+    size: 60px;
     width: 150px;
-    margin: 20px;
-  }
-   
-  * .redes-sociais__link:hover {
-    opacity: 0.5;
-  } 
-  
-  * .redes-sociais__link img {
+    margin: 10px;
     padding-top: 15px;
     width: auto;
-    height: 70px;
-  } 
+    height: 70px; 
+}
+.redes-sociais i{
+    font-size: 8em;
+}
+.copyright{
+    font-size: medium;
+    margin: 18% 15%;
+    text-align: center;
+    
+} 
 
-  @media(max-width: 768px){
+
+  @media(max-width: 928px){
     .sobre__conteudo{
         
         flex-direction: column;
@@ -171,12 +159,19 @@ body{
     .sobre__descricao{
        width: 100%;    
    }
-
-@media (min-width:200px) {
-    .bottom{
-        display: list-item
-    }
+   .redes-sociais{
+       display: list-item;
+   }
+   .copyright{
+        font-size: medium;
+        margin: 10% 15%;
+        text-align: center;
+   }
 }
 
-   
-} 
+    @media (min-width:200px) {
+    .bottom{
+        display: list-item; 
+    }
+    
+}
